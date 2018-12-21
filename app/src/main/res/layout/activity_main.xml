@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false" android:maxLength="6"
+        android:focusable="false" />
+
+
+    <com.ywj.numberkeyboarddemo.PasswordView
+        android:id="@+id/passwordView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/editText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+
+    <com.ywj.numberkeyboarddemo.NumKeyView
+        android:id="@+id/keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#bababa"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="#333"
+        android:keyTextSize="28dp"
+        android:labelTextSize="20dp"
+        android:shadowColor="#333"
+        android:shadowRadius="0.0"
+        app:deleteDrawable="@drawable/ic_delete_icon"
+
+
+        />
+</RelativeLayout>
